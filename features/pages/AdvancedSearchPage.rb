@@ -1,20 +1,16 @@
-def openPage
-  visit "http://www.etsy.com/search_advanced.php"
-end
-
 def goToSection section
   openPage
   find(:xpath, "//a[@title = '#{section}']").click()
 end
 
-def search thing
+def searchForItem thing
   fill_in("search-query", :with => thing)
     #find(:id, "search-query").send_keys thing
   click_button ("search_submit")
   #@browser.find_element(:id, "search_submit").click()
 end
 
-def subCategory sub_category
+def selectSubCategory sub_category
   find(:xpath, "//option[text()='#{sub_category}']").click
 end
 
