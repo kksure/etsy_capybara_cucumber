@@ -1,6 +1,11 @@
 = etsy_capybara_cucumber
 
-Description goes here.
+Steps to get this project running on your machine:
+
+1. Checkout the code from https://github.com/kksure/etsy_capybara_cucumber
+2. Install bundler and do a bundle install. Please take a look at the Gemfile for the gems it will install	
+3. The cucumber gem version is 1.0.1 and selenium-webdriver (0.2.2)
+4. From etsy_capybara_cucumber folder, run the command 'cucumber'
 
 == Contributing to etsy_capybara_cucumber
  
